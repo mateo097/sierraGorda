@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sg-stats-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sgStats/SgStatsWebPart.js",
+          "manifest": "./src/webparts/sgStats/SgStatsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SgStatsWebPartStrings": "lib/webparts/sgStats/loc/{locale}.js"
+  }
+}

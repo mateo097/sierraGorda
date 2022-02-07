@@ -1,0 +1,170 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.testpart {
+  
+  .container {
+    max-width: 1000px;
+    margin: 0px auto;
+   
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 100;
+    padding: 20px;
+    
+    width:46rem;
+    margin-top: 1rem;
+    border-radius: 8px
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    margin-left: 3rem
+  }
+
+  .subTitle {
+    @include ms-font-l;
+   margin-left: 2rem;
+    font-size: 0.9rem !important;
+
+  }
+  .wrap{
+    inline-size: 29rem;
+   word-wrap: break-word
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .border-bottom{
+    border-bottom: 1px solid black;
+  }
+
+  .scroll {
+    display: block;
+  height: 15em;
+  overflow: auto;
+  }
+
+  .scroll-horizontal {
+   
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .stats-container{
+   
+    background-color: blueviolet;
+    padding: 0.3rem;
+    color: white
+}
+.expired-container{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -3rem;
+ 
+
+}
+
+.expired-expired{
+  border-radius: 5px;
+}
+.expired-toexpire{
+  height: 100px;
+  
+  
+  border-radius: 5px;
+}
+.expired-number{
+  font-size: 3rem
+
+}
+.expired-text{
+  color: gray;
+  margin-top: -3rem;
+  font-size: 1rem;
+}
+.expired-title{
+  color: black;
+  font-weight: 400;
+  
+ 
+  font-size: 1.2rem;
+}
+.table-rows-container{
+  margin-top: 1.5rem;
+}
+.table-row:hover{
+  background-color: rgb(255, 229, 195);
+  border-top: 0,5px solid rgb(255, 229, 195);
+  border-bottom: 0,5px solid rgb(255, 229, 195);
+}
+.table-titles{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  
+}
+.text{
+  color: gray;
+  font-size: 1rem;
+  margin: 0.4rem;
+}
+.text-alt{
+  color: gray;
+  font-size: 0.8rem;
+  margin: 0.2rem;
+}
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}
+.stats-container{
+  height: 300px;
+  background-color: blueviolet;
+}
